@@ -1,6 +1,6 @@
 {
     "name": "ra-data-thecore",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "description": "Thecore REST data provider for react-admin",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
@@ -18,7 +18,8 @@
     "license": "MIT",
     "scripts": {
         "prebuild": "rm -rf dist/*",
-        "build": "webpack"
+        "build": "webpack",
+        "prepublish": "yarn run build"
     },
     "dependencies": {
         "query-string": "^7.1.1"
